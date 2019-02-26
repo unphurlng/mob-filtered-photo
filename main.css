@@ -1,0 +1,15 @@
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    border: solid black 2px;
+    width: 200px;
+    margin: 20px;
+    padding: 25px;
+}
+
+img {
+    width: 100%;
+}
