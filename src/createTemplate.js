@@ -8,3 +8,5 @@ export function createTemplate(image) {
         `;
     return template.content;    
 }
+
+// 
