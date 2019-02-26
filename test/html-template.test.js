@@ -8,17 +8,17 @@ const image = {
 };
 
 function createTemplate(image) {
-    return `
+    const template = document.createElement('template');
+    template.innerHTML = `
         <li>
             <p>${image.title}</p>
             <img src="${image.url}">
         </li>
         `;
+    return template.content;    
 }
 
 test('dynamically displays images and their keys', assert => {
-    //arrange
-
     const expected = `
         <li>
             <p>UniWhal</p>
@@ -26,9 +26,8 @@ test('dynamically displays images and their keys', assert => {
         </li>
         `;
 
-    //act
     const result = createTemplate(image);
 
-    //assert
-    assert.equal(result, expected);
+    assert.htmlEqual(result, expected);
 });
+
