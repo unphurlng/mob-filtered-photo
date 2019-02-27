@@ -1,4 +1,4 @@
-export function createTemplate(image) {
+function createTemplate(image) {
     const template = document.createElement('template');
     template.innerHTML = `
         <li>
@@ -9,4 +9,4 @@ export function createTemplate(image) {
     return template.content;    
 }
 
-// 
+export default createTemplate;

@@ -1,5 +1,3 @@
-const filterForm = document.getElementById('filter-form');
-
 function filterImages(images, filtered) {
     return images.filter((image) => {
         const hasKeyword = !filtered.keyword || image.keyword === filtered.keyword;
